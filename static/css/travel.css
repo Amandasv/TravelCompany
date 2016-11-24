@@ -1,6 +1,7 @@
 html, body, main {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: #666; }
 
 header {
   background: #f6f6fb;
@@ -14,16 +15,44 @@ header {
 .nav-header {
   display: inline-block;
   float: right;
-  list-style-type: none; }
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px; }
   .nav-header li {
     float: left;
-    margin-left: 40px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border: 1px solid #f6f6fb; }
     .nav-header li i {
       font-size: 20px;
       color: #32b3b9;
       margin-left: 2px; }
+  .nav-header li:hover {
+    color: #32b3b9;
+    border: 1px solid red;
+    border-bottom: 0;
+    background: #fff; }
   .nav-header li:first-child {
     margin-left: 0; }
+  .nav-header li.change-dropdown {
+    position: relative; }
+    .nav-header li.change-dropdown ul.dropdown {
+      display: none;
+      position: absolute;
+      padding: 0;
+      background: #fff;
+      border: 1px solid red;
+      border-top: 0;
+      list-style-type: none;
+      left: -1px;
+      top: 100%;
+      right: -1px; }
+      .nav-header li.change-dropdown ul.dropdown li {
+        float: initial;
+        margin-left: 0;
+        border: 0; }
+  .nav-header li.change-dropdown:hover ul.dropdown {
+    display: block; }
 
 /*# sourceMappingURL=travel.css.map */

@@ -1,8 +1,11 @@
 $principal-color: #32b3b9;
+$font-family: 'Roboto', sans-serif;
+$text-color: #666;
 
 html, body, main {
   width: 100%;
   height: 100%;
+  color: $text-color;
 }
 
 header {
@@ -23,11 +26,15 @@ header {
 	display: inline-block;
 	float: right;
 	list-style-type: none;
+	font-family: $font-family;
+	font-weight: 500;
+	font-size: 14px;
 
 	li{
 		float: left;
-		margin-left: 40px;
 		text-transform: uppercase;
+		padding: 8px 20px;
+		border: 1px solid #f6f6fb;
 
 		i{
 			font-size: 20px;
@@ -36,7 +43,44 @@ header {
 		}
 	}
 
+	li:hover{
+		color: $principal-color;
+		border: 1px solid red;
+		border-bottom: 0;
+		background: #fff;
+	}
+
 	li:first-child{
 		margin-left: 0;	
 	}
+
+	li.change-dropdown{
+		position: relative;
+
+		ul.dropdown{
+			display: none;
+			position: absolute;
+			padding: 0;
+			background: #fff;			
+			border: 1px solid red;
+			border-top: 0;
+			list-style-type: none;
+			left: -1px;
+			top: 100%;
+			right: -1px;
+
+			li{
+				float: initial;
+				margin-left: 0; 
+				border: 0;
+
+			}
+		}
+	}	
+
+	li.change-dropdown:hover ul.dropdown{
+		display: block;
+	}
+
+	
 }
