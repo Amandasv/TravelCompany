@@ -127,12 +127,20 @@ section.pattern {
 #banner {
   margin-bottom: 0; }
   #banner .slick-next {
-    right: 20px; }
+    right: 40px; }
   #banner .slick-prev {
-    left: 20px; }
+    left: 40px; }
   #banner .slick-list.draggable, #banner .slick-track {
     height: 100%; }
   #banner .slick-next, #banner .slick-prev {
     z-index: 5; }
+  #banner .slick-prev:before {
+    content: "\f104";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 50px; }
+  #banner .slick-next:before {
+    content: "\f105";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 50px; }
 
 /*# sourceMappingURL=travel.css.map */
