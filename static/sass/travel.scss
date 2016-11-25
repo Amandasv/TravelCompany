@@ -24,6 +24,7 @@ header {
 	padding: 15px 14% 0;
 
 	nav{
+		position:relative;
 		border-bottom: 5px solid $principal-color;
 		padding-bottom: 10px;
 
@@ -129,3 +130,21 @@ header {
 	}	
 }
 
+.nav-header.open-dropdown{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    padding: 0;
+    text-align: right;
+
+	li{
+		float: none;
+
+		ul.dropdown{	
+			position: initial;						
+			border: none;
+		}
+	}
+}
