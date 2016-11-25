@@ -291,19 +291,39 @@ section.pattern{
 	.div-columns{
 		margin-left: 60px;
 		margin-right: 60px;
+		text-align: center;
 
 		.each-column{
 			display: inline-block;
-			height: 200px;
-			width: calc((100% - 150px)/3);
+			width: calc((100% - 460px)/3);
 			margin: 0 20px;
+			text-align: center;
 
 			figure{
-				width: 250px; 
-				height: 250px; 
+				margin: 0 auto;
+				width: 230px; 
+				height: 230px; 
 				border-radius: 50%; 
 				border: 6px solid $principal-color;
 				padding: 4px;
+
+				div{
+					overflow: hidden; 
+					border-radius: 50%; 
+					width: 100%; 
+					height: 100%;
+
+					img{
+						height: 100%; 
+						height: 100%; 
+						object-fit: cover;
+					}
+				}
+			}
+
+			h3{
+				
+				text-transform: uppercase;
 			}
 		}
 	}
