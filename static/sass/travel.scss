@@ -164,22 +164,9 @@ section.pattern{
 	}
 }
 
-#section-initial{
-	background: url(../images/casal2.jpg), RGBA(20, 129, 135, 0.6);
-	background-repeat: no-repeat, repeat-x;
-	-webkit-background-size: cover, cover;
-	-moz-background-size: cover, cover;
-	-o-background-size: cover, cover;
-	background-size: cover, cover;	
-	background-position: bottom center, bottom center;
-	background-blend-mode: multiply, normal;
-	-webkit-blend-mode: multiply, normal; 
-	z-index: -1;
-	height:100%;
-	width: 100%;
+.each-section{	
 	text-align: center;
 	color: #fff;
-	display: table;
 
 	h1{		
 		text-transform: uppercase;
@@ -196,6 +183,22 @@ section.pattern{
 		display: block;
 		margin: 0px auto;
 	}
+}
+
+#section-initial{
+	background: url(../images/casal2.jpg), RGBA(20, 129, 135, 0.6);
+	background-repeat: no-repeat, repeat-x;
+	-webkit-background-size: cover, cover;
+	-moz-background-size: cover, cover;
+	-o-background-size: cover, cover;
+	background-size: cover, cover;	
+	background-position: bottom center, bottom center;
+	background-blend-mode: multiply, normal;
+	-webkit-blend-mode: multiply, normal; 
+	z-index: -1;
+	height:100%;
+	width: 100%;
+	display: table;	
 }	
 
 #section-second{
@@ -211,6 +214,7 @@ section.pattern{
 	z-index: -1;
 	height:100%;
 	width: 100%;
+	display: table;
 }
 
 
