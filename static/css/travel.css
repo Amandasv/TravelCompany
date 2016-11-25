@@ -3,14 +3,27 @@ html, body, main {
   height: 100%;
   color: #666; }
 
+a {
+  text-decoration: none; }
+
 header {
   background: #f6f6fb;
-  padding: 15px 140px 0; }
+  padding: 15px 14% 0; }
   header nav {
     border-bottom: 5px solid #32b3b9;
     padding-bottom: 10px; }
     header nav #brand img {
       max-height: 70px; }
+  header #nav-toggle {
+    float: right;
+    margin-top: 20px;
+    border: 1px solid #ebebeb;
+    padding: 7px;
+    color: #666;
+    display: inline-block; }
+    @media screen and (min-width: 992px) {
+      header #nav-toggle {
+        display: none; } }
 
 .nav-header {
   display: inline-block;
@@ -21,18 +34,20 @@ header {
   font-size: 14px; }
   .nav-header li {
     float: left;
-    text-transform: uppercase;
     padding: 8px 20px;
     border: 1px solid #f6f6fb; }
     .nav-header li i {
       font-size: 20px;
       color: #32b3b9;
       margin-left: 2px; }
+    .nav-header li .title-menu {
+      text-transform: uppercase; }
   .nav-header li:hover {
-    color: #32b3b9;
-    border: 1px solid red;
-    border-bottom: 0;
-    background: #fff; }
+    border: 1px solid #ebebeb;
+    background: #f6f6fb;
+    cursor: pointer; }
+    .nav-header li:hover .title-menu {
+      color: #32b3b9; }
   .nav-header li:first-child {
     margin-left: 0; }
   .nav-header li.change-dropdown {
@@ -41,8 +56,8 @@ header {
       display: none;
       position: absolute;
       padding: 0;
-      background: #fff;
-      border: 1px solid red;
+      background: #f6f6fb;
+      border: 1px solid #ebebeb;
       border-top: 0;
       list-style-type: none;
       left: -1px;
@@ -54,5 +69,12 @@ header {
         border: 0; }
   .nav-header li.change-dropdown:hover ul.dropdown {
     display: block; }
+    .nav-header li.change-dropdown:hover ul.dropdown a {
+      color: #666; }
+    .nav-header li.change-dropdown:hover ul.dropdown li:hover a {
+      color: #32b3b9; }
+  @media screen and (max-width: 992px) {
+    .nav-header {
+      display: none; } }
 
 /*# sourceMappingURL=travel.css.map */

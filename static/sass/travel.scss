@@ -1,6 +1,13 @@
 $principal-color: #32b3b9;
 $font-family: 'Roboto', sans-serif;
 $text-color: #666;
+$color-header: #f6f6fb; 
+$color-border: #ebebeb;
+$width-lg: 1200px;
+$width-md: 992px;
+$width-sm: 768px;
+$width-xs: 480px;
+
 
 html, body, main {
   width: 100%;
@@ -8,9 +15,13 @@ html, body, main {
   color: $text-color;
 }
 
+a{
+	text-decoration: none;
+}
+
 header {
-	background: #f6f6fb;
-	padding: 15px 140px 0;
+	background: $color-header;
+	padding: 15px 14% 0;
 
 	nav{
 		border-bottom: 5px solid $principal-color;
@@ -20,6 +31,22 @@ header {
 			max-height: 70px;
 		}
 	}
+	
+	#nav-toggle{	
+		float: right;
+		margin-top: 20px;
+		border: 1px solid $color-border;
+		padding: 7px;
+		color: $text-color;
+		display: inline-block;
+
+		@media screen and (min-width: $width-md) {
+			display: none;
+		}
+
+		
+	}
+		
 }
 
 .nav-header{
@@ -32,22 +59,28 @@ header {
 
 	li{
 		float: left;
-		text-transform: uppercase;
 		padding: 8px 20px;
-		border: 1px solid #f6f6fb;
+		border: 1px solid $color-header;
 
 		i{
 			font-size: 20px;
 			color:  $principal-color;
 			margin-left: 2px;
 		}
+
+		.title-menu{
+			text-transform: uppercase;
+		}
 	}
 
 	li:hover{
-		color: $principal-color;
-		border: 1px solid red;
-		border-bottom: 0;
-		background: #fff;
+		border: 1px solid $color-border;
+		background: $color-header;
+		cursor: pointer;
+	
+		.title-menu{
+			color: $principal-color;
+		}
 	}
 
 	li:first-child{
@@ -61,8 +94,8 @@ header {
 			display: none;
 			position: absolute;
 			padding: 0;
-			background: #fff;			
-			border: 1px solid red;
+			background: $color-header;			
+			border: 1px solid $color-border;
 			border-top: 0;
 			list-style-type: none;
 			left: -1px;
@@ -80,7 +113,19 @@ header {
 
 	li.change-dropdown:hover ul.dropdown{
 		display: block;
+		
+		a{
+			color: $text-color;
+		}
+
+		li:hover a{
+			color: $principal-color;
+
+		}
 	}
 
-	
+	@media screen and (max-width: $width-md) {
+		display: none;
+	}	
 }
+
