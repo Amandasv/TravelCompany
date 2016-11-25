@@ -271,7 +271,7 @@ section.pattern{
 			height: 1px;
 			border-bottom: 6px solid $principal-color;
 			bottom: -14px;
-			left: 35%;
+			left: 40%;
 		}
 
 
@@ -324,6 +324,19 @@ section.pattern{
 			h3{
 				
 				text-transform: uppercase;
+			}
+
+			@media screen and (max-width: $width-md){
+				display: block;
+				width: 100%;
+				margin-bottom: 20px;
+
+				span{
+				    width: 50%;
+				    display: block;
+				    margin: 0 auto;
+
+				}
 			}
 		}
 	}

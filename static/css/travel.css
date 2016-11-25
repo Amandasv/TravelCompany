@@ -186,7 +186,7 @@ section.pattern {
     height: 1px;
     border-bottom: 6px solid #32b3b9;
     bottom: -14px;
-    left: 35%; }
+    left: 40%; }
 
 #middle-section {
   z-index: 1;
@@ -225,6 +225,15 @@ section.pattern {
             object-fit: cover; }
       #middle-section .div-columns .each-column h3 {
         text-transform: uppercase; }
+      @media screen and (max-width: 992px) {
+        #middle-section .div-columns .each-column {
+          display: block;
+          width: 100%;
+          margin-bottom: 20px; }
+          #middle-section .div-columns .each-column span {
+            width: 50%;
+            display: block;
+            margin: 0 auto; } }
 
 #color-green span:after {
   border-bottom: 6px solid red; }
