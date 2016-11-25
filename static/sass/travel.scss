@@ -90,6 +90,7 @@ header {
 
 	li.change-dropdown{
 		position: relative;
+		z-index: 5;
 
 		ul.dropdown{
 			display: none;
@@ -164,5 +165,47 @@ section.pattern{
 	background-blend-mode: multiply, normal;
 	-webkit-blend-mode: multiply, normal; 
 	z-index: -1;
+	height:100%;
+	width: 100%;
 }	
+
+#section-second{
+	background: url(../images/menina1.jpg), RGBA(20, 129, 135, 0.6);
+	background-repeat: no-repeat, repeat-x;
+	-webkit-background-size: cover, cover;
+	-moz-background-size: cover, cover;
+	-o-background-size: cover, cover;
+	background-size: cover, cover;	
+	background-position: bottom center, bottom center;
+	background-blend-mode: multiply, normal;
+	-webkit-blend-mode: multiply, normal; 
+	z-index: -1;
+	height:100%;
+	width: 100%;
+}
+
+
+#banner{
+	margin-bottom: 0;
+
+	.slick-next{
+		right: 20px; 
+	}
+
+	.slick-prev{
+		left: 20px;
+	}	
+
+	.slick-list.draggable, .slick-track{
+		height:100%;
+	}	
+
+	.slick-next, .slick-prev{
+		z-index: 5;
+	}
+}
+
+
+
+
 
