@@ -257,6 +257,7 @@ section.pattern{
 	text-transform: uppercase;
 	font-size: 35px;
 	letter-spacing: -1px;
+	margin-bottom: 50px;
 
 	span {
 		position: relative;
@@ -286,6 +287,26 @@ section.pattern{
 	transform: skew(0deg,-7deg); 
 	-ms-transform: skew(0deg,-7deg); 
 	-webkit-transform: skew(0deg,-7deg);
+
+	.div-columns{
+		margin-left: 60px;
+		margin-right: 60px;
+
+		.each-column{
+			display: inline-block;
+			height: 200px;
+			width: calc((100% - 150px)/3);
+			margin: 0 20px;
+
+			figure{
+				width: 250px; 
+				height: 250px; 
+				border-radius: 50%; 
+				border: 6px solid $principal-color;
+				padding: 4px;
+			}
+		}
+	}
 
 }
 
