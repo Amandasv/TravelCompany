@@ -252,7 +252,49 @@ section.pattern{
 	}
 }
 
+.with-border{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 35px;
+	letter-spacing: -1px;
 
+	span {
+		position: relative;
+		color: $text-color;
+	}
+
+	span:after {
+			position: absolute;
+			content: '';
+			width: 25%;
+			height: 1px;
+			border-bottom: 6px solid $principal-color;
+			bottom: -14px;
+			left: 35%;
+		}
+
+
+}
+
+#middle-section{ 
+	z-index: 1; 
+	display: block; 
+	float: left; 
+	margin-top: -100px; 
+	width: 100%; 
+	background: #e7e7e0; 
+	transform: skew(0deg,-7deg); 
+	-ms-transform: skew(0deg,-7deg); 
+	-webkit-transform: skew(0deg,-7deg);
+
+}
+
+
+#color-green{
+	span:after {
+		border-bottom: 6px solid red;
+	}
+}
 
 
 
