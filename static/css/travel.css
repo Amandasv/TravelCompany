@@ -135,7 +135,7 @@ section.pattern {
   display: table; }
 
 #section-second {
-  background: url(../images/menina1.jpg), RGBA(20, 129, 135, 0.6);
+  background: url(../images/menina1.jpg), RGBA(52, 66, 87, 0.6);
   background-repeat: no-repeat, repeat-x;
   -webkit-background-size: cover, cover;
   -moz-background-size: cover, cover;
