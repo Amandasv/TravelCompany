@@ -199,6 +199,9 @@ section.pattern {
     border-bottom: 6px solid #32b3b9;
     bottom: -14px;
     left: 40%; }
+    @media screen and (max-width: 480px) {
+      .with-border span:after {
+        bottom: -50px; } }
 
 #middle-section {
   z-index: 1;
@@ -265,9 +268,6 @@ section.pattern {
     margin-top: 70px; }
     #middle-section #color-green span:after {
       border-bottom: 6px solid #a3cf53; }
-      @media screen and (max-width: 768px) {
-        #middle-section #color-green span:after {
-          bottom: -50px; } }
 
 .btn-see-more {
   text-align: center;
