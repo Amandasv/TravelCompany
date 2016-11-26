@@ -469,6 +469,7 @@ section.pattern{
 			textarea{
 				display: block;
 				margin-top: 5px;
+				width: 100%;
 			}			
 		}
 
@@ -507,6 +508,21 @@ footer{
 		font-weight: 400;
 		font-style: normal;
 		margin-left: 5px;
+	}
+
+	.right-div{
+		display: inline-block; 
+		float: right; 
+		font-size: 12px;
+
+		@media screen and (max-width: $width-sm){
+			display: block;
+			margin-top: 15px;
+		}	
+	}
+
+	.left-div{
+		display: inline-block;
 	}
 }
 

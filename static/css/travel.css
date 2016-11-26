@@ -322,7 +322,8 @@ section.pattern {
         font-weight: 500; }
       #form-contact form .inputs-form textarea {
         display: block;
-        margin-top: 5px; }
+        margin-top: 5px;
+        width: 100%; }
     #form-contact form #submit {
       padding: 10px;
       background: #a3cf53;
@@ -351,6 +352,16 @@ footer {
     font-weight: 400;
     font-style: normal;
     margin-left: 5px; }
+  footer .right-div {
+    display: inline-block;
+    float: right;
+    font-size: 12px; }
+    @media screen and (max-width: 768px) {
+      footer .right-div {
+        display: block;
+        margin-top: 15px; } }
+  footer .left-div {
+    display: inline-block; }
 
 .clear-transform {
   display: block;
