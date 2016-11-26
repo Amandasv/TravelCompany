@@ -4,21 +4,20 @@ $( document ).ready(function() {
 	    $('.nav-header').toggleClass('open-dropdown');
 	});
 
+    $(function() { 
+		$('#banner').slick({
+			dots: true,
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 9000,
+		});
 
-
-});
-
-$(function() { 
-	$('#banner').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 500,
-	  fade: true,
-	  cssEase: 'linear'
 	});
 
 });
-
 
 $('#form').submit(function(){
 	var name = $('#name');
