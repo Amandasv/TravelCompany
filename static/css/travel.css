@@ -4,6 +4,9 @@ html, body, main {
   color: #666;
   font-family: "Roboto", sans-serif; }
 
+html {
+  background: #e7e7e0; }
+
 a {
   text-decoration: none; }
 
@@ -281,13 +284,73 @@ section.pattern {
 
 #form-contact {
   background: #32b3b9;
-  height: 300px;
   z-index: 0;
   display: block;
   float: left;
   margin-top: -100px;
   width: 100%;
-  padding-top: 250px; }
+  padding-top: 220px;
+  padding-bottom: 30px; }
+  #form-contact h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: -1px;
+    margin-bottom: 10px; }
+  #form-contact span {
+    display: block;
+    text-align: center;
+    color: #fff; }
+  #form-contact form {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px; }
+    #form-contact form .inputs-form {
+      text-align: left;
+      padding: 10px 15px;
+      border: 2px solid;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+      #form-contact form .inputs-form input, #form-contact form .inputs-form textarea {
+        background: transparent;
+        border: none;
+        color: #344257;
+        width: 75%;
+        text-transform: uppercase;
+        font-weight: 500; }
+      #form-contact form .inputs-form textarea {
+        display: block;
+        margin-top: 5px; }
+    #form-contact form #submit {
+      padding: 10px;
+      background: #a3cf53;
+      border-radius: 2px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      border: none; }
+
+footer {
+  background: #e7e7e0;
+  padding: 20px 14%;
+  font-weight: 300;
+  clear: both; }
+  footer a {
+    margin: 0 5px;
+    color: #666; }
+  footer i.dz {
+    background: #666;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px; }
 
 .clear-transform {
   display: block;
