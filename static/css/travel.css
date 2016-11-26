@@ -100,9 +100,6 @@ header {
 
 section.pattern {
   height: 90%; }
-  @media screen and (max-width: 768px) {
-    section.pattern {
-      height: 700px; } }
 
 .vertical-align {
   display: table-cell;
@@ -127,9 +124,10 @@ section.pattern {
     margin: 0px auto; }
   @media screen and (max-width: 768px) {
     .each-section h1 {
-      font-size: 26px; }
+      font-size: 24px;
+      padding: 15px; }
     .each-section span {
-      width: 70%; } }
+      width: 80%; } }
 
 #section-initial {
   background: url(../images/casal2.jpg), RGBA(20, 129, 135, 0.6);
@@ -167,6 +165,11 @@ section.pattern {
     right: 40px; }
   #banner .slick-prev {
     left: 40px; }
+  @media screen and (max-width: 768px) {
+    #banner .slick-next {
+      right: 5px; }
+    #banner .slick-prev {
+      left: 5px; } }
   #banner .slick-list.draggable, #banner .slick-track {
     height: 100%; }
   #banner .slick-next, #banner .slick-prev {
@@ -202,6 +205,9 @@ section.pattern {
     @media screen and (max-width: 480px) {
       .with-border span:after {
         bottom: -50px; } }
+  @media screen and (max-width: 992px) {
+    .with-border {
+      font-size: 24px; } }
 
 #middle-section {
   z-index: 1;
@@ -248,9 +254,10 @@ section.pattern {
         #middle-section .div-columns .each-column {
           display: block;
           width: 100%;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          margin: 5px; }
           #middle-section .div-columns .each-column span {
-            width: 50%;
+            width: 80%;
             display: block;
             margin: 0 auto; } }
       #middle-section .div-columns .each-column.two-columns {
@@ -264,6 +271,10 @@ section.pattern {
             width: inherit; }
             #middle-section .div-columns .each-column.two-columns span {
               width: 100%; } }
+    @media screen and (max-width: 768px) {
+      #middle-section .div-columns {
+        margin-left: 10px;
+        margin-right: 10px; } }
   #middle-section #color-green {
     margin-top: 70px; }
     #middle-section #color-green span:after {
@@ -333,6 +344,11 @@ section.pattern {
       font-size: 14px;
       font-weight: 500;
       border: none; }
+  @media screen and (max-width: 768px) {
+    #form-contact h1 {
+      font-size: 25px; }
+    #form-contact form {
+      width: 80%; } }
 
 footer {
   background: #e7e7e0;
